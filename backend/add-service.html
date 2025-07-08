@@ -928,7 +928,7 @@
 							<!-- PAGE-HEADER -->
 							<div class="page-header">
 								<div>
-									<h1 class="page-title">Add Service</h1>
+									<h1 class="page-title">Services</h1>
 								</div>
 								<div class="ms-auto pageheader-btn">
 									<ol class="breadcrumb">
@@ -958,10 +958,10 @@
 												<div class="form-row">
 													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
                                                         <label for="service-image" class="form-label">Service Image</label>
-                                                        <input type="file" class="form-control" id="service-image">
+                                                        <input type="file" class="dropify" accept="image/*" id="service-image" data-height="200" />
 													</div>
 												</div>
-												<button class="btn btn-primary mt-2" type="submit">Submit form</button>
+												<button class="btn btn-primary mt-2" type="submit">Add Service</button>
 											</form>
 										</div>
 									</div>
@@ -1109,6 +1109,10 @@
 
 		<!-- FORMVALIDATION JS -->
 		<script src="assets/js/form-validation.js"></script>
+
+        <!--Internal Fileuploads js-->
+		<script src="assets/plugins/fileuploads/js/fileupload.js"></script>
+		<script src="assets/plugins/fileuploads/js/file-upload.js"></script>
 
         
         <!-- COLOR THEME JS -->
