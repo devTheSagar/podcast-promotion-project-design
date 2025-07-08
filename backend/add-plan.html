@@ -826,7 +826,7 @@
                                     <span class="side-menu__label">Services</span><i class="angle fa fa-angle-right"></i>
                                 </a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Forms</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Services</a></li>
                                     <li><a href="add-service.html" class="slide-item">Add Service</a></li>
                                     <li><a href="all-services.html" class="slide-item">All Services</a></li>
                                 </ul>
@@ -838,7 +838,17 @@
                                 <ul class="slide-menu">
                                     <li class="side-menu-label1"><a href="javascript:void(0)">Plans</a></li>
                                     <li><a href="add-plan.html" class="slide-item">Add Plan</a></li>
-                                    <li><a href="all-plans.html" class="slide-item">All Plan</a></li>
+                                    <li><a href="all-plans.html" class="slide-item">All Plans</a></li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M19,2H9C7.3438721,2.0018311,6.0018311,3.3438721,6,5v1H5C3.3438721,6.0018311,2.0018311,7.3438721,2,9v10c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3v-1h1c1.6561279-0.0018311,2.9981689-1.3438721,3-3V5C21.9981689,3.3438721,20.6561279,2.0018311,19,2z M17,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H5c-1.1040039-0.0014038-1.9985962-0.8959961-2-2v-8h14V19z M17,10H3V9c0.0014038-1.1040039,0.8959961-1.9985962,2-2h10c1.1040039,0.0014038,1.9985962,0.8959961,2,2V10z M21,15c-0.0014038,1.1040039-0.8959961,1.9985962-2,2h-1V9c-0.0008545-0.7719116-0.3010864-1.4684448-0.7803345-2H21V15z M21,6H7V5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h10c1.1040039,0.0014038,1.9985962,0.8959961,2,2V6z"/></svg>
+                                    <span class="side-menu__label">Plan Review & Rating</span><i class="angle fa fa-angle-right"></i></a>
+                                <ul class="slide-menu">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Plan Review & Rating</a></li>
+                                    <li><a href="add-review-rating.html" class="slide-item">Add Review Rating</a></li>
+                                    <li><a href="all-review-rating.html" class="slide-item">Show All</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -934,281 +944,63 @@
 								<div class="col-lg-12 col-md-12">
 									<div class="card">
 										<div class="card-header border-bottom">
-											<h3 class="card-title">Default Validation</h3>
-										</div>
-										<div class="card-body">
-											<form class="row g-3 needs-validation" novalidate>
-												<div class="col-md-4">
-												  <label for="validationCustom01" class="form-label">First name</label>
-												  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-												  <div class="valid-feedback">
-													Looks good!
-												  </div>
-												</div>
-												<div class="col-md-4">
-												  <label for="validationCustom02" class="form-label">Last name</label>
-												  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-												  <div class="valid-feedback">
-													Looks good!
-												  </div>
-												</div>
-												<div class="col-md-4">
-												  <label for="validationCustomUsername" class="form-label">Username</label>
-												  <div class="input-group has-validation">
-													<span class="input-group-text" id="inputGroupPrepend">@</span>
-													<input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-													<div class="invalid-feedback">
-													  Please choose a username.
-													</div>
-												  </div>
-												</div>
-												<div class="col-md-6">
-												  <label for="validationCustom03" class="form-label">City</label>
-												  <input type="text" class="form-control" id="validationCustom03" required>
-												  <div class="invalid-feedback">
-													Please provide a valid city.
-												  </div>
-												</div>
-												<div class="col-md-3">
-												  <label for="validationCustom04" class="form-label">State</label>
-												  <select class="form-select" id="validationCustom04" required>
-													<option selected disabled value="">Choose...</option>
-													<option>...</option>
-												  </select>
-												  <div class="invalid-feedback">
-													Please select a valid state.
-												  </div>
-												</div>
-												<div class="col-md-3">
-												  <label for="validationCustom05" class="form-label">Zip</label>
-												  <input type="text" class="form-control" id="validationCustom05" required>
-												  <div class="invalid-feedback">
-													Please provide a valid zip.
-												  </div>
-												</div>
-												<div class="col-12">
-												  <div class="form-check">
-													<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-													<label class="form-check-label" for="invalidCheck">
-													  Agree to terms and conditions
-													</label>
-													<div class="invalid-feedback">
-													  You must agree before submitting.
-													</div>
-												  </div>
-												</div>
-												<div class="col-12">
-												  <button class="btn btn-primary" type="submit">Submit form</button>
-												</div>
-											  </form>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<div class="card">
-										<div class="card-header border-bottom">
 											<h3 class="card-title">Custom Validation</h3>
 										</div>
 										<div class="card-body">
 											<form class="needs-validation" novalidate>
 												<div class="form-row">
 													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationCustom011">First name</label>
-														<input type="text" class="form-control" id="validationCustom011" value="Mark" required>
-														<div class="valid-feedback">Looks good!</div>
-													</div>
-													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationCustom12">Last name</label>
-														<input type="text" class="form-control" id="validationCustom12" value="Otto" required>
-														<div class="valid-feedback">Looks good!</div>
-													</div>
-												</div>
-												<div class="form-row">
-													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationCustom13">City</label>
-														<input type="text" class="form-control" id="validationCustom13" required>
-														<div class="invalid-feedback">Please provide a valid city.</div>
-													</div>
-													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationCustom14">State</label>
-														<select class="form-select" id="validationCustom14" data-placeholder="select state" required>
-															<option label="Choose"></option>
-															<option>New york</option>
-															<option>USA</option>
-															<option>Berlin</option>
-															<option>Manchester</option>
-															<option>Flynn</option>
+														<label for="service-select">Select Service</label>
+														<select class="form-select" id="service-select" data-placeholder="select state" required>
+															<option label="Choose" selected disabled></option>
+															<option>Podcast promotion</option>
+															<option>Spotify promotion</option>
+															<option>Youtube promotion</option>
 														</select>
-														<div class="invalid-feedback">Please select a valid state.</div>
-													</div>
-													<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 mb-3">
-														<label for="validationCustom15">Zip</label>
-														<input type="number" class="form-control" id="validationCustom15" required>
-														<div class="invalid-feedback">Please provide a valid zip.</div>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="ckbox">
-														<input type="checkbox" id="invalidCheck3" required>
-														<span class="text-13">I agree terms and conditions</span>
-													</label>
-												</div>
-												<button class="btn btn-primary" type="submit">Submit form</button>
-											</form>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<div class="card">
-										<div class="card-header border-botto">
-											<h3 class="card-title">Server Side Validation</h3>
-										</div>
-										<div class="card-body">
-											<form>
-												<div class="form-row">
-													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationServer01">First name</label>
-														<input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-														<div class="valid-feedback">Looks good!</div>
-													</div>
-													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationServer02">Last name</label>
-														<input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-														<div class="valid-feedback">Looks good!</div>
+														<div class="invalid-feedback">Please select a valid service.</div>
 													</div>
 												</div>
 												<div class="form-row">
 													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationServer03">City</label>
-														<input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-														<div id="validationServer03Feedback" class="invalid-feedback">Please provide a valid city.</div>
+														<label for="plan-name">Plan Name</label>
+														<input type="text" class="form-control" id="plan-name" required>
+														<div class="invalid-feedback">Please provide a valid plan name.</div>
 													</div>
 													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationServer04">State</label>
-														<select class="form-select select2 form-control is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-														<option selected disabled value="">Choose...</option>
-														<option>...</option>
-														</select>
-														<div id="validationServer04Feedback" class="invalid-feedback">Please select a valid state.</div>
-													</div>
-													<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 mb-3">
-														<label for="validationServer05">Zip</label>
-														<input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-														<div id="validationServer05Feedback" class="invalid-feedback">Please provide a valid zip.</div>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="ckbox">
-														<input type="checkbox" id="invalidCheck2" required>
-														<span class="text-13">I agree terms and conditions</span>
-													</label>
-												</div>
-												<button class="btn btn-primary" type="submit">Submit form</button>
-											</form>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<div class="card">
-										<div class="card-header border-bottom">
-											<h3 class="card-title">Supported Elements</h3>
-										</div>
-										<div class="card-body">
-											<form class="was-validated">
-												<div class="mb-3">
-												  <label for="validationTextarea" class="form-label">Textarea</label>
-												  <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-												  <div class="invalid-feedback">
-													Please enter a message in the textarea.
-												  </div>
-												</div>
-
-												<div class="form-check mb-3">
-												  <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
-												  <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
-												  <div class="invalid-feedback">Example invalid feedback text</div>
-												</div>
-
-												<div class="form-check">
-												  <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-												  <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
-												</div>
-												<div class="form-check mb-3">
-												  <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
-												  <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
-												  <div class="invalid-feedback">More example invalid feedback text</div>
-												</div>
-
-												<div class="mb-3">
-												  <select class="form-select" required aria-label="select example">
-													<option value="">Open this select menu</option>
-													<option value="1">One</option>
-													<option value="2">Two</option>
-													<option value="3">Three</option>
-												  </select>
-												  <div class="invalid-feedback">Example invalid select feedback</div>
-												</div>
-
-												<div class="mb-3">
-												  <input type="file" class="form-control" aria-label="file example" required>
-												  <div class="invalid-feedback">Example invalid form file feedback</div>
-												</div>
-
-												<div class="mb-3">
-												  <button class="btn btn-primary" type="submit" disabled>Submit form</button>
-												</div>
-											  </form>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<div class="card">
-										<div class="card-header border-bottom">
-											<h3 class="card-title">Tooltips</h3>
-										</div>
-										<div class="card-body">
-											<form class="needs-validation" novalidate>
-												<div class="form-row">
-													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationTooltip01">First name</label>
-														<input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
-														<div class="valid-tooltip">Looks good!</div>
+														<label for="plan-price">Plan Price</label>
+														<input type="number" class="form-control" id="plan-price" required>
+														<div class="invalid-feedback">Please provide a valid plan price.</div>
 													</div>
 													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationTooltip02">Last name</label>
-														<input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
-														<div class="valid-tooltip">Looks good!</div>
-													</div>
-												</div>
-												<div class="form-row">
-													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationTooltip03">City</label>
-														<input type="text" class="form-control" id="validationTooltip03" required>
-														<div class="invalid-tooltip">Please provide a valid city.</div>
+														<label for="plan-duration">Duration</label>
+														<input type="text" class="form-control" id="plan-duration" required>
+														<div class="invalid-feedback">Please provide a valid plan price.</div>
 													</div>
 													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-														<label for="validationTooltip04">State</label>
-														<select class="form-select form-control" id="validationTooltip04" required>
-														<option selected disabled value="">Choose...</option>
-														<option>...</option>
-														</select>
-														<div class="invalid-tooltip">Please select a valid state.</div>
-													</div>
-													<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 mb-3">
-														<label for="validationTooltip05">Zip</label>
-														<input type="text" class="form-control" id="validationTooltip05" required>
-														<div class="invalid-tooltip">Please provide a valid zip.</div>
+                                                        <label>Plan Features</label>
+                                                        <div id="plan-features-container">
+                                                            <div class="input-group mb-2">
+                                                                <input type="text" class="form-control plan-feature-input" name="plan-features[]" required>
+                                                                <button type="button" class="btn btn-danger remove-feature" style="display:none;">Remove</button>
+                                                                <div class="invalid-feedback">Please provide at least one plan feature.</div>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn btn-success btn-sm" id="add-feature">Add More Feature</button>
+                                                    </div>
+												</div>
+                                                <div class="form-row">
+													<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+														<label for="plan-name">Plan Description</label>
+                                                        <textarea name="" id="summernote" class="form-control" rows="2"></textarea>
 													</div>
 												</div>
-												<button class="btn btn-primary" type="submit">Submit form</button>
+												<button class="btn btn-primary mt-3" type="submit">Add Plan</button>
 											</form>
 										</div>
 									</div>
 								</div>
 							</div>
 							<!-- ROW CLOSED -->
-
-                            
                         </div>
                     </div>
                 </div>
@@ -1358,6 +1150,46 @@
 
         <!-- SWITCHER JS -->
         <script src="assets/switcher/js/switcher.js"></script>
+
+        <!-- INTERNAL Summernote Editor js -->
+		<script src="assets/plugins/summernote-editor/summernote1.js"></script>
+		<script src="assets/js/summernote.js"></script>
+
+		<!-- WYSIWYG Editor JS -->
+		<script src="assets/plugins/wysiwyag/jquery.richtext.js"></script>
+		<script src="assets/plugins/wysiwyag/wysiwyag.js"></script>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const container = document.getElementById('plan-features-container');
+                const addBtn = document.getElementById('add-feature');
+
+                addBtn.addEventListener('click', function() {
+                    const div = document.createElement('div');
+                    div.className = 'input-group mb-2';
+                    div.innerHTML = `
+                        <input type="text" class="form-control plan-feature-input" name="plan-features[]" required placeholder="Enter feature">
+                        <button type="button" class="btn btn-danger remove-feature">Remove</button>
+                    `;
+                    container.appendChild(div);
+                    updateRemoveButtons();
+                });
+
+                container.addEventListener('click', function(e) {
+                    if (e.target.classList.contains('remove-feature')) {
+                        e.target.parentElement.remove();
+                        updateRemoveButtons();
+                    }
+                });
+
+                function updateRemoveButtons() {
+                    const removeBtns = container.querySelectorAll('.remove-feature');
+                    removeBtns.forEach(btn => btn.style.display = 'inline-block');
+                    if (removeBtns.length === 1) removeBtns[0].style.display = 'none';
+                }
+            });
+        </script>
 
     </body>
 
